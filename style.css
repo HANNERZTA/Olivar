@@ -1,8 +1,9 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-.Container{
+
+.Container {
     background: #5E7053;
     width: 100%;
     display: flex;
@@ -11,101 +12,138 @@
     position: fixed;
     z-index: 100;
 }
-.img{
-    margin: 10px; 
+
+.img {
+    margin: 10px;
 }
-.menu{
+
+.menu {
     display: flex;
     list-style: none;
     gap: 30px;
 }
-li{
+
+li {
     font-size: 22px;
     font-weight: bold;
 }
-.menus{
+
+.menus {
     text-decoration: none;
     color: white;
     transition: color 0.3s;
+    position: relative;
 }
-i{
+.menus:after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 4px;
+    background: white;
+    bottom: -5px;
+    right: 50%;
+    transition: all .5s;
+    will-change: width;
+}
+.menus:hover:after{
+    width: 100%;
+    right: 0;
+}
+
+i {
     font-size: 50px;
     margin: 10px;
     color: white;
 }
-.inicio{
+
+.inicio {
     background: #f6ddcc;
     display: flex;
 }
-.carousel-inner img
-{
-   height: 550px;
-   object-fit: cover;
+
+.carousel-inner img {
+    height: 550px;
+    object-fit: cover;
 }
-.carousel-caption
-{
+
+.carousel-caption {
     color: black;
 }
-.titulo
-{
+
+.titulo {
     background: #5E7053;
     padding: 5px;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.459);
     z-index: 10;
 }
-.titulo h1
-{
+
+.titulo h1 {
     color: white;
 }
-.productos
-{
+
+.productos {
     background: #5E7053;
 }
-.productos button
-{
+
+.productos button {
     background: #424242a2;
     width: 40px;
     height: 40px;
 }
 
-.tarjeta .card
-{
+.tarjeta .card {
     background: #979e91;
 }
-.tarjeta .card .card-body
-{
+
+.tarjeta .card .card-body {
     color: white;
 }
-.tarjeta .card .card-body a
-{
+
+.tarjeta .card .card-body a {
     background: #80461B;
     border: 1px solid transparent;
 }
-.etiqueta .card
-{
+
+.etiqueta .card {
     background: #5E7053;
 }
-.etiqueta .card .card-body
-{
+
+.etiqueta .card .card-body {
     color: white;
 }
-.etiqueta .card .card-body .card-title
-{
+
+.etiqueta .card .card-body .card-title {
     background: #80461B;
     border-radius: 10px;
     text-align: center;
     padding: 5px;
 }
-.ubicacion .mapa
-{
+
+.ubicacion .mapa {
     border-radius: 10px;
 }
-.final
-{
+
+.final {
     background-color: #5E7053;
 }
-.informacion
-{
+
+.informacion {
     color: white;
+}
+iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    border: 2px solid #5E7053;
+}
+
+@media (max-width: 1000px)
+{
+    .Tipos
+    {
+        display: grid;
+        place-items: center;
+        
+    }
 }
